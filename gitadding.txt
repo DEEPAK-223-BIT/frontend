@@ -1,0 +1,75 @@
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git init
+Initialized empty Git repository in C:/Users/deepa/OneDrive/Desktop/FrontEnd/.git/
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git add .
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> gt commit -m "block line"
+gt : The term 'gt' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was 
+included, verify that the path is correct and try again.
+At line:1 char:1
++ gt commit -m "block line"
++ ~~
+    + CategoryInfo          : ObjectNotFound: (gt:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git commit -m "block line"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'deepa@Deepa.(none)')
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git config --global user.email "deepakchennaboina@gmail.com"
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git config --global user.name "DEEPAK-223-BIT"
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git remote add origin "https://github.com/DEEPAK-223-BIT/frontend.git"
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd>  git push --set-upstream origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/DEEPAK-223-BIT/frontend.git'
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git commit -m "block line"
+[master (root-commit) f18bb58] block line
+ 2 files changed, 29 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 index1.html
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd>  git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 602 bytes | 602.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DEEPAK-223-BIT/frontend.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git add .
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git commit -m "block line"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> git push
+Everything up-to-date
+PS C:\Users\deepa\OneDrive\Desktop\FrontEnd> 
